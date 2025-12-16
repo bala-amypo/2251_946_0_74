@@ -1,8 +1,8 @@
 package com.example.demo.entity
 
 import jakarta.persistence.*;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+// import jakarta.persistence.GeneratedValue;
+// import jakarta.persistence.Id;
 
 @Entity
 public class Student {
@@ -45,6 +45,4 @@ public class Student {
     public Student() {
         
     }
-    
-    
 }
