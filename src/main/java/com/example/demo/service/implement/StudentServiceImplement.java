@@ -1,7 +1,7 @@
 package com.example.demo.service.implement;
 
 import org.springframework.stereotype.Service;
-import org.springframework.beans.factory.annotation.AutoWired;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import com.example.demo.entity.Student; 
@@ -11,7 +11,7 @@ import com.example.demo.repository.StudentRepository;
 @Service
 public class StudentServiceImplement implements StudentService{
 
-    @AutoWired
+    @Autowired
     StudentRepository sturep;
 
     @Override

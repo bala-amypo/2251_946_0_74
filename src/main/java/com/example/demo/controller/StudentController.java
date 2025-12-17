@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.beans.factory.annotation.AutoWired;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import com.example.demo.service.StudentService;
 @RestController
 public class StudentController{
 
-    @AutoWired
+    @Autowired
     StudentService ser;
 
     @PostMapping("/adddata")
