@@ -25,7 +25,7 @@ public class StudentServiceImplement implements StudentService{
     }
 
     @Override
-    public Optional<Student> fetchById(int Id){
+    public Optional<Student> fetchById(int id){
         return sturep.findById(id);
     }
 }
