@@ -2,7 +2,7 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.List;
+import java.util.*;
 
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
