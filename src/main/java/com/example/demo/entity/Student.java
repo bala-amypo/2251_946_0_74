@@ -37,7 +37,7 @@ public class Student {
         this.cgpa = cgpa;
     }
     public Student(int id, String stuname, String stumail, float cgpa) {
-        this.id = id;
+        // this.id = id;
         this.stuname = stuname;
         this.stumail = stumail;
         this.cgpa = cgpa;
