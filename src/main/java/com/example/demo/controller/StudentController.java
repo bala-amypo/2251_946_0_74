@@ -33,8 +33,8 @@ public class StudentController{
     public String updateById(@PathVariable int id,@RequestBody Student stu){
         Optional<Student> student = ser.fetchById(id);
         if(student.isPresent()){
-            stu.setId(id);
-            ser.createDate(stu);
+            return stu.setId(id);
+            return ser.createDate(stu);
             return "Data updated successfully";
         }else{
             return id + "Not found";

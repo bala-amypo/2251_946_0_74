@@ -31,6 +31,6 @@ public class StudentServiceImplement implements StudentService{
 
     @Override
     public void deleteById(int id){
-        return sturep.deleteById(id);
+        sturep.deleteById(id);
     }
 }
