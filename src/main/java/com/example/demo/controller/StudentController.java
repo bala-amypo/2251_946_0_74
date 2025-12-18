@@ -32,12 +32,10 @@ public class StudentController{
     @PutMapping("/updatebyid/{id}")
     public String updateById(@PathVariable int id,@RequestBody Student stu){
         Optional<Student> student = ser.fetchDataById(id);
-
         if(student.isPresent())
         {
             stu.setId(id);
             ser.createDate(stu);
-
             return "Data updated success";
         }
         else
@@ -45,4 +43,7 @@ public class StudentController{
             return id + "Not found";
         }
     }
+
+    @DeleteMapping("/deletebyid")
+
 }
