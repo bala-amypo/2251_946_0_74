@@ -30,7 +30,19 @@ public class StudentController{
     }
 
     @PutMapping("/updatebyid/{id}")
-    public Optional<Student> updateById(@PathVariable int id,@RequestBody Student stu){
-        return ser.
+    public String updateById(@PathVariable int id,@RequestBody Student stu){
+        Optional<Student> student = ser.fetchDataById(id);
+
+        if(student.isPresent())
+        {
+            stu.setId(id);
+            ser.createDate(stu);
+
+            return "Data updated success";
+        }
+        else
+        {
+            return id + "Not found";
+        }
     }
 }
