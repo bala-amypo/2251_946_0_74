@@ -41,7 +41,7 @@ public class StudentController{
         }
     }
 
-    @DeleteMapping("/deletebyid")
+    @DeleteMapping("/deletebyid/{}")
     public String deleteById(@PathVariable int id){
         Optional<Student> student = ser.fetchById(id);
         if(student.isPresent()){
