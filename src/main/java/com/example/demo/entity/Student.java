@@ -10,6 +10,7 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String stuname;
+    @Column(unique = true)
     private String stumail;
     private float cgpa;
     public int getId() {
