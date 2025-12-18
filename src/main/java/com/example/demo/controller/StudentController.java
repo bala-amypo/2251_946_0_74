@@ -45,6 +45,6 @@ public class StudentController{
     }
 
     @DeleteMapping("/deletebyid")
-    public String 
+    public String deletebyId(@)
 
 }
